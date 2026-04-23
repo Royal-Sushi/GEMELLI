@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemelli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="" href="logo.jpeg">
+</head>
+<body>
+<header>
+    <nav>
+          <div class="left-side">
+        <img id="navlogo" src="logo.jpeg" alt="website logo">
+        <span id="nametext">Gemelli</span>
+    </div>
+     <ul>
+            <li class="buttons"><a href="index.html">Menu</a></li>
+            <li class="buttons"><a href="aboutus.html">About Us</a></li>
+            <li class="buttons"><a href="tel:+393793314674">Contact Us</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide"><img src="pizze speciali.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="pizze.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="bevande.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="focaccie.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="secondi di terra.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="secondi di mare.jpg" alt="dish photo"></div>
+        
+        <div class="slide"><img src="pizze speciali.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="pizze.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="bevande.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="focaccie.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="secondi di terra.jpg" alt="dish photo"></div>
+        <div class="slide"><img src="secondi di mare.jpg" alt="dish photo"></div>
+    </div>
+</div>
+<section class="category-section">
+    <h2 class="section-title">Categories</h2>
+    <div class="category-grid">
+        <div class="category-card" onclick="toggleMenu('antipasti-menu')">
+            <div class="category-image">
+                <img src="antipasti.jpg" alt="antipasti">
+            </div>
+            <span class="category-name">ANTIPASTI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('contorini-menu-menu')">
+            <div class="category-image">
+                <img src="contorni.jpg" alt="contorni">
+            </div>
+            <span class="category-name">CONTORNI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('primiditerra-menu')">
+            <div class="category-image">
+                <img src="primi di terra.jpg" alt="primiditerra">
+            </div>
+            <span class="category-name">PRIMI DI TERRA</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('primidimare-menu')">
+            <div class="category-image">
+                <img src="primi di mare.jpg" alt="primidimarre">
+            </div>
+            <span class="category-name">PRIMI DI MARRE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('hamburger-menu')">
+            <div class="category-image">
+                <img src="hamburger.jpg" alt="hamburger">
+            </div>
+            <span class="category-name">HAMBURGER</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('insalatone-menu')">
+            <div class="category-image">
+                <img src="insalatone.jpg" alt="insalatone">
+            </div>
+            <span class="category-name">INSALATONE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('secondiditerra-menu')">
+            <div class="category-image">
+                <img src="secondi di terra.jpg" alt="secondiditerra">
+            </div>
+            <span class="category-name">SECONDI DI TERRA</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('secondidimare-menu')">
+            <div class="category-image">
+                <img src="secondi di mare.jpg" alt="secondidimare">
+            </div>
+            <span class="category-name">SECONDI DI MARE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('pizze-menu')">
+            <div class="category-image">
+                <img src="pizze.jpg" alt="pizze">
+            </div>
+            <span class="category-name">PIZZE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('pizzespeciali-menu')">
+            <div class="category-image">
+                <img src="pizze speciali.jpg" alt="pizzespeciali">
+            </div>
+            <span class="category-name">PIZZE SPECIALI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('focaccie-menu')">
+            <div class="category-image">
+                <img src="focaccie.jpg" alt="focaccie">
+            </div>
+            <span class="category-name">FOCACCIE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('calzoni-menu')">
+            <div class="category-image">
+                <img src="calzoni.jpg" alt="calzoni">
+            </div>
+            <span class="category-name">CALZONI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('bevande-menu')">
+            <div class="category-image">
+                <img src="bevande.jpg" alt="bevande">
+            </div>
+            <span class="category-name">BEVANDE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('birre-menu')">
+            <div class="category-image">
+                <img src="birre.jpg" alt="birre">
+            </div>
+            <span class="category-name">BIRRE</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('alcolici-menu')">
+            <div class="category-image">
+                <img src="alcolici.jpg" alt="alcolici">
+            </div>
+            <span class="category-name">ALCOLICI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('caffetteria-menu')">
+            <div class="category-image">
+                <img src="caffetteria.jpg" alt="caffetteria">
+            </div>
+            <span class="category-name">CAFFETTERIA</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('vinoinbottiglia-menu')">
+            <div class="category-image">
+                <img src="vino in bottiaglia.jpg" alt="vinoinbottiglia">
+            </div>
+            <span class="category-name">VINO IN BOTTIGLIA</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('vinodellacasa-menu')">
+            <div class="category-image">
+                <img src="vino della casa.jpg" alt="vinodellacasa">
+            </div>
+            <span class="category-name">VINO DELLA CASA</span>
+        </div>
+
+
+        
+        </div>
+
+    <div id="antipasti-menu" class="sub-menu-container">
+        <h3>ANTIPASTI</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="piovra alla catalana.jpg" alt="Piovra alla catalana">
+                <div class="item-info">
+                    <h3>PIOVRA ALLA CATALANA</h3>
+                    <div class="order-container">
+                        <span class="price">15 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Bruschetta al pomodoro.jpg" alt="Bruschetta al pomodoro">
+                <div class="item-info">
+                    <h3>BRUSHCETA AL POMODORO</h3>
+                    <div class="order-container">
+                        <span class="price">5 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Cocktail di gamberi.jpg" alt="cocktail di gamberi">
+                <div class="item-info">
+                    <h3>COCKTAIL DI GAMBERI</h3>
+                    <div class="order-container">
+                        <span class="price">10 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Tagliere di salumi con gnocco fritto.jpg" alt="tagliere di salmuni con gnocco fritto">
+                <div class="item-info">
+                    <h3>TAGLIERE DI SALUMI CON GNOCCO FRITTO</h3>
+                    <div class="order-container">
+                        <span class="price">15 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="primiditerra-menu" class="sub-menu-container">
+        <h3>PRIMI DI TERRA</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="risotto alla milanese.jpg" alt="risotto alla milanese">
+                <div class="item-info">
+                    <h3>RISOTTO ALLA MILANESE</h3>
+                    <div class="order-container">
+                        <span class="price">12 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="spaghetti alle carbonara.jpg" alt="spaghetti alla carbonara">
+                <div class="item-info">
+                    <h3>SPAGHETTI ALLA CARBONARA</h3>
+                    <div class="order-container">
+                        <span class="price">12 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="spaghetti alla pomodoro.jpg" alt="spaghetti al pomodoro">
+                <div class="item-info">
+                    <h3>SPAGHETTI AL POMODORO</h3>
+                    <div class="order-container">
+                        <span class="price">10 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="primidimare-menu" class="sub-menu-container">
+        <h3>PRIMI DI MARE</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="taglialette al salmone.jpg" alt="Tagliatelle alla salmone">
+                <div class="item-info">
+                    <h3>TAGLIATELLE AL SALMONE</h3>
+                    <div class="order-container">
+                        <span class="price">15 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="spaghetti alle vongole.jpg" alt="Spaghetti alle vongole">
+                <div class="item-info">
+                    <h3>SPAGHETTI ALLE VONGOLE</h3>
+                    <div class="order-container">
+                        <span class="price">15 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="pacheri totano e vongole.jpg" alt="Paccheri totano e vongole">
+                <div class="item-info">
+                    <h3>PACCHERI TOTANO E VONGOLE</h3>
+                    <div class="order-container">
+                        <span class="price">18 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="spaghetti al cartoccio.jpg" alt="Spaghetti al cartoccio">
+                <div class="item-info">
+                    <h3>SPAGHETTI AL CARTOCCIO</h3>
+                    <div class="order-container">
+                        <span class="price">23 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hamburger-menu" class="sub-menu-container">
+        <h3>HAMBURGER</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="smash burger.jpg" alt="smashburger">
+                <div class="item-info">
+                    <h3>SHASH BURGER</h3>
+                    <div class="order-container">
+                        <span class="price">9 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="smash cheese burger.jpg" alt="smash cheese burger">
+                <div class="item-info">
+                    <h3>SHASH CHEESE BURGER</h3>
+                    <div class="order-container">
+                        <span class="price">10 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insalatone-menu" class="sub-menu-container">
+        <h3>INSALATONE</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="insalatona di mare.jpg" alt="insalatona di mare">
+                <div class="item-info">
+                    <h3>INSALATONA DI MARE</h3>
+                    <div class="order-container">
+                        <span class="price">15 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="secondidimare-menu" class="sub-menu-container">
+        <h3>SECONDI DI MARE</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="Grigliata mista di pesce.jpg" alt="grigliata mista di pesce">
+                <div class="item-info">
+                    <h3>GRIGLIATA MISTA DI PASCE</h3>
+                    <div class="order-container">
+                        <span class="price">25 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pizze-menu" class="sub-menu-container">
+        <h3>PIZZE</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="bufala.jpg" alt="bufala">
+                <div class="item-info">
+                    <h3>BUFALA</h3>
+                    <div class="order-container">
+                        <span class="price">9 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="diavola.jpg" alt="diavola">
+                <div class="item-info">
+                    <h3>DIAVOLA</h3>
+                    <div class="order-container">
+                        <span class="price">7 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cotto e funghi.jpg" alt="cotto e funghi">
+                <div class="item-info">
+                    <h3>COTTO E FUNGHI</h3>
+                    <div class="order-container">
+                        <span class="price">9 EUR</span>
+                    </div>
+                </div>
+            </div>
+           <div class="menu-item">
+                <img src="tonnata.jpg" alt="tonnata">
+                <div class="item-info">
+                    <h3>TONNATA</h3>
+                    <div class="order-container">
+                        <span class="price">8 EUR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="braccia di ferro.jpg" alt="braccio di ferro">
+                <div class="item-info">
+                    <h3>BRACCIO DI FERRO</h3>
+                    <div class="order-container">
+                        <span class="price">10 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pizzespeciali-menu" class="sub-menu-container">
+        <h3>PIZZE SPECIALI</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="frutti di mare.jpg" alt="frutti di mare">
+                <div class="item-info">
+                    <h3>FRUTTI DI MARRE</h3>
+                    <div class="order-container">
+                        <span class="price">12 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pizzespeciali-menu" class="sub-menu-container">
+        <h3>PIZZE SPECIALI</h3>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="frutti di mare.jpg" alt="frutti di mare">
+                <div class="item-info">
+                    <h3>FRUTTI DI MARRE</h3>
+                    <div class="order-container">
+                        <span class="price">12 EUR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    function toggleMenu(menuId) {
+        document.querySelectorAll('.sub-menu-container').forEach(menu => {
+            if(menu.id !== menuId) menu.classList.remove('active');
+        });
+        
+        const selectedMenu = document.getElementById(menuId);
+        selectedMenu.classList.toggle('active');
+        
+        if(selectedMenu.classList.contains('active')) {
+            setTimeout(() => {
+                selectedMenu.scrollIntoView({ behavior: 'smooth' });
+            }, 200);
+        }
+    }
+</script>
+        
+    </body>
+</html>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>Indirizzo:</strong>Via Giovanni Pierluigi da Palestrina, 34 20124 Milano ITALIA</p>
+            <p><strong>Telefono:</strong> <a href="tel:+995511232338">+39 379 331 46 74</a></p>
+        </div>
+
+        <div class="footer-socials">
+            <p>Trovateci sui social network:</p>
+            <div class="social-icons">
+                <a href="facebook.com" class="icon-link"><img src="facebook.png" alt="Facebook"></a>
+                <a href="instagram.com" class="icon-link"><img src="instagram.png" alt="Instagram"></a>
+                <a href="tiktok.com" class="icon-link"><img src="tik-tok.png" alt="Tiktok"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Gemelli. Tutti i diritti riservati.</p>
+    </div>
+</footer>
